@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+}
+
+section {
+    box-sizing: border-box;
+    margin: 5% 5%;
+    display: flex;
+    box-shadow: 4px 4px 10px 2px rgba(9, 9, 9, 0.5);
+    height: 500px;
+    overflow: auto;
+}
+
+#formSection {
+    padding-left: 10px;
+}
+
+#formSection,
+#imgSection {
+    width: 50%;
+}
+
+#imgSection {
+    position: sticky;
+    right: 0;
+    top: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+#contact input,
+#address input {
+    margin: 20px 12px;
+    border: none;
+    padding: 10px;
+    border-bottom: 2px solid #b3b3b3;
+    width: 40%;
+}
+
+#contact input::placeholder,
+#address input::placeholder {
+    font-size: 16px;
+    font-family: monospace;
+}
+
+#address label {
+    display: block;
+    margin: 0 12px;
+}
+
+#address select {
+    margin: 10px 12px;
+    width: 30%;
+    padding: 5px 10px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 8px 5px;
+}
+
+h2 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type="datetime-local"] {
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding: 8px;
+
+}
+
+#button {
+    position: absolute;
+    top: 600px;
+    left: 40%;
+}
+
+input[type="reset"],
+input[type="submit"] {
+    margin: 10px;
+    font-size: large;
+    padding: 5px 15px;
+    background-color: #903edd;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+    background-color: #441e67;
+    transition: background-color 0.2s;
+}
+
+@media screen and (max-width:1106px) {
+
+    #contact input,
+    #address input {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:715px) {
+    section {
+        flex-direction: column;
+    }
+
+    #formSection,
+    #imgSection {
+        width: 100%;
+    }
+
+    #imgSection {
+        order: 0;
+        position: relative;
+        height: 60%;
+    }
+
+    #formSection {
+        order: 1;
+    }
+
+    #button {
+        top: 550px;
+        left: 25%;
+    }
+}

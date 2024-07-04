@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="labForm.css">
+</head>
+
+<body>
+    <section>
+        <div id="formSection">
+            <form>
+                <div id="contact">
+                    <h2>1. Your contact details</h2>
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="text" name="patient_id" placeholder="Patient Id if exists">
+                    <input type="tel" name="phone_number" placeholder="Contact Number" required>
+                    <input type="email" name="email" placeholder="Email Id" required>
+                </div>
+
+                <div id="address">
+                    <h2>2. Address</h2>
+                    <input type="text" name="H_No" placeholder="H-No">
+                    <input type="text" name="street" placeholder="Street">
+                    <input type="text" name="area" placeholder="Area">
+                    <label for="district">District </label>
+                    <select name="district" id="district" required>
+                        <option value="">Choose</option>
+                        <option value="abc">ABC</option>
+                        <option value="def">DEF</option>
+                        <option value="ghi">GHI</option>
+                        <option value="jkl">JKL</option>
+                        <option value="mno">MNO</option>
+                    </select>
+                </div>
+
+                <div id="checkbox">
+                    <h2>3. Choose the Test Type <span>(Check atleast one box without fail)</span>.</h2>
+                    <input type="checkbox" name="lab_test1" value="CBC" id="cbc">
+                    <label for="cbc">CBC</label> <br>
+
+                    <input type="checkbox" name="lab_test2" value="Complete Urine" id="urine-tes">
+                    <label for="urine-test">Complete Urine </label><br>
+
+                    <input type="checkbox" name="lab_test3" value="Lipid Profile" id="lipid">
+                    <label for="lipid">Lipid Profile</label> <br>
+
+                    <input type="checkbox" name="lab_test4" value="Thyroid Stimulating Hormone(TSH)" id="TSH">
+                    <label for="TSH">Thyroid Stimulating Hormone(TSH) </label><br>
+
+                    <input type="checkbox" name="lab_test5" value="Glucose Test" id="glucose-test">
+                    <label for="glucose-test">Glucose Test </label><br>
+                </div>
+                <div id="radio">
+                    <h2>4. Do you want a hard copy of the report also? </h2>
+                    <input type="radio" name="report_copy" value="yes" id="yes" required>
+                    <label for="yes">Yes</label><br>
+                    <input type="radio" name="report_copy" value="no" id="no" required>
+                    <label for="no">No</label><br>
+                </div>
+                <div id="date-time">
+                    <h2>5. Select Your Comfortable Date and Time </h2>
+                    <input type="datetime-local" name="avaliable_time" min="2024-07-03 00:00:00" required>
+                </div>
+                <div id="button">
+                    <input type="reset" value="Reset" id="reset">
+                    <input type="submit" value="Submit" id="submit">
+                </div>
+            </form>
+        </div>
+        <div id="imgSection">
+            <img src="./../Images/Lab-Test/lab-test.jpg" alt="lab-img">
+        </div>
+
+    </section>
+</body>
+
+</html>
