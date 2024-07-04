@@ -1,4 +1,4 @@
-# -G1B5_HTML-CSS_GradedProject1
+# G1B5_HTML-CSS_GradedProject1
 
 <h2>pharmacy shop website design </h2>
 
